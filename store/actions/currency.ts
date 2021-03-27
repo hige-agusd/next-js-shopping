@@ -1,5 +1,12 @@
 import { actionTypes } from './actionsTypes';
 
+export const setCurrency = (currency) => {
+  return {
+    type: actionTypes.CURRENCY_SELECTOR_UPDATE,
+    current: currency
+  }
+}
+
 export const fetchRatesSuccess = (rates) => {
   return {
     type: actionTypes.CURRENCY_RATES_FETCH,
