@@ -1,0 +1,119 @@
+.container {
+    background-color: aliceblue;
+    margin-top: 6.5rem;
+    max-width: 100vw;
+    min-height: 100vh;
+    padding-top: 2rem;
+}
+
+.wrapper {
+    background-color: white;
+    display: grid;
+    max-width: 90vw;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas: 
+    'T T T T T T T T T T T T'
+    'I I I I I I I I I I I I'
+    'I I I I I I I I I I I I'
+    'I I I I I I I I I I I I'
+    'I I I I I I I I I I I I'
+    'I I I I I I I I I I I I'
+    'I I I I I I I I I I I I'
+    'P P P . . . . . A A A A'
+    'C C C C C C C . . . . .'
+    'D D D D D D D D D D D D'
+    'D D D D D D D D D D D D'
+    'D D D D D D D D D D D D';
+}
+
+.detailTitle {
+    grid-area: T;
+    max-width: 100%;
+
+}
+.detailImage {
+    grid-area: I;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+.detailImage img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.detailPrice {
+    grid-area: P;
+}
+.detailAddToCart {
+    grid-area: A;
+}
+.detailAddToCart:hover {
+    color: darkslategray;
+}
+.detailCategory {
+    color: darkslategray;
+    grid-area: C;
+}
+.detailCategory strong {
+    text-decoration: underline;
+}
+.detailDescription {
+    grid-area: D;
+    max-width: 100%;
+}
+.detailDescription strong {
+    text-decoration: underline;
+}
+
+@media (min-width: 1100px) {
+    .wrapper {
+        max-width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-areas: 
+        'I I I I I I I I I I I I . T T T T T T T T T T T'
+        'I I I I I I I I I I I I . P . . . . . . A A A A'
+        'I I I I I I I I I I I I . D D D D D D D D D D D'
+        'I I I I I I I I I I I I . D D D D D D D D D D D'
+        'I I I I I I I I I I I I . C C C C C C C . . . .'
+        'I I I I I I I I I I I I . . . . . . . . . . . .';
+    }
+    .detailImage {
+        margin-right: 2rem;
+    }
+    .detailAddToCart {
+        margin-right: 2rem;
+        text-align: right;
+    }
+    .detailPrice {
+        width: 5rem;
+    }    
+  }
+
+@media (min-width: 1600px) {
+    .container {
+        margin-top: 8rem;
+        padding-left: 10vw;
+        padding-right: 10vw;  
+    }
+}
+
+@media (min-width: 2000px) {
+    .container {
+        padding-left: 15vw;
+        padding-right: 15vw;  
+    }
+}
+
+@media (min-width: 2200px) {
+    .container {
+        margin-top: 11rem;
+        padding-left: 17vw;
+        padding-right: 17vw;  
+    }
+}

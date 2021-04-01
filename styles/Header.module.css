@@ -1,0 +1,81 @@
+.container {
+    background-color: aliceblue;
+    border-bottom: 10px solid black;
+    display: flex;
+    flex-direction: row;
+    height: 6.5rem;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    background-image: url('/modern-shopping-cart-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 70%;
+    margin: 0.5rem 0;
+    width: 20%;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu a {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu > a {
+    padding-top: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+.menu a:hover {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+.menu > * {
+    height: 3rem;
+    width: 3.5rem;
+}
+
+.menu > a > svg.homeIcon {
+    height: 2rem;
+    width: 2.5rem;
+}
+
+.menu > div > a::after {
+    content: "\25bc";
+    font-size: 1rem;
+}
+
+.menu > li {
+    margin-top: 1.9rem;
+}
+
+@media (min-width: 1600px) {
+    .container {
+        height: 8rem;
+    }
+    .logo {
+        height: 75%;
+        margin-top: 1rem;
+    }
+
+}
+
+@media (min-width: 2200px) {
+    .container {
+        height: 11rem;
+    }
+  }

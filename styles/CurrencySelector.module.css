@@ -1,0 +1,28 @@
+.container {
+    display:inline-block;
+    min-width:50px;
+    height:50px;
+    vertical-align:top;
+    margin:10px;
+    text-align:center;
+    line-height:50px;
+    padding:5px;    
+    font-size: 30px;
+}  
+.container:hover {
+    background-color: white;
+    color: darkslategray;
+}
+.container .ddt {
+    background: none;
+    border: 1px solid red;
+    height: 30px;
+}
+
+.button.btn.dropdown-toggle.btn-primary {
+    background: none;
+}
+
+.caret {
+    display: none;
+}

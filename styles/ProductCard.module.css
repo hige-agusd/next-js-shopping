@@ -1,0 +1,54 @@
+.container {
+    background-color: white;
+    border-radius: 0.3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.75rem;
+    max-width: 90%;
+    padding: 0.5rem;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    width: 90%;
+}
+.image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.bottom {
+    max-height: 35vh;
+}
+
+.bottom * {
+    color: black;
+}
+
+.bottom > section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+
+.bottom > h1 {
+    height: 6rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+
+.bottom > section > svg {
+    height: 2rem;
+    font-size: 1.5rem;
+}
+
+.bottom > section > svg:hover {
+    font-size: 2.3rem;
+    margin-right: -0.4rem;
+}
