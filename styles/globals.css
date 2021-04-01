@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
+  max-width: 100vw;
 }

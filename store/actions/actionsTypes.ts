@@ -1,7 +1,9 @@
 export enum actionTypes {
-  CART_ADD_ITEM = 'CART_ADD_ITEM',
-  CART_CLEAR = 'CART_CLEAR',
-  CURRENCY_SELECTOR_UPDATE = 'CURRENCY_SELECTOR_UPDATE',
-  CURRENCY_RATES_FETCH = 'CURRENCY_RATES_FETCH',
-  PRODUCTS_FETCH = 'PRODUCTS_FETCH',
+  CART_ADD_ITEM = 'cart/addItem',
+  CART_CLEAR = 'cart/clear',
+  CART_REMOVE_ITEM = 'cart/removeItem',
+  CART_DELETE_ITEM = 'cart/deleteItem',
+  CURRENCY_SELECTOR_UPDATE = 'currency/select',
+  CURRENCY_RATES_FETCH = 'currency/fetchRates',
+  PRODUCTS_FETCH = 'products/fetchProducts',
 };
