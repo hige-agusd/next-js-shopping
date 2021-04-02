@@ -7,12 +7,7 @@ import CurrentCurrencyIcon from './current-currency-icon';
 import styles from '../../styles/CartButton.module.css';
 import { State } from '../../store/slices';
 
-export interface CurrencySelectorProps {
-    current: string;
-    setCurrency: Function;
-}
-
-const CurrencySelector: FC<CurrencySelectorProps> = () => {
+const CurrencySelector: FC = () => {
 
     const { current } = useSelector( ({currency}: State) => ({
         current: currency.current,

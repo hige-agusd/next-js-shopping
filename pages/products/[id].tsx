@@ -6,11 +6,7 @@ import ProductDetail from '../../src/components/product-detail';
 import NotFound from '../not-found';
 import { State } from '../../store/slices';
 
-export interface ProductProps {
-    products?: Product[];
-}
-
-const ProductPage: FC<ProductProps> = () => {
+const ProductPage: FC = () => {
     const router = useRouter();
     const { id } = router.query;
     const {products} = useSelector(({products}: State ) => ({
