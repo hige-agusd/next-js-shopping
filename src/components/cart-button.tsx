@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import { useSelector } from 'react-redux';
-import { ItemInCart } from '../utils/types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart }from '@fortawesome/free-solid-svg-icons';
 import { countItemsInCart } from '../utils/helper';

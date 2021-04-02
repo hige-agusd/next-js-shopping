@@ -6,7 +6,7 @@ interface ErrorsComponentProps {
 }
 
 const ErrorsComponent: FC<ErrorsComponentProps> = ({message}) => {
-    return <main className={styles.message}><h1>{message}</h1></main>
+    return <main className={styles.container}><h1>{message}</h1></main>
 }
 
 export default ErrorsComponent;
