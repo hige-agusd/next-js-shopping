@@ -9,11 +9,7 @@ import Link from 'next/link';
 import { State } from '../../store/slices';
 
 
-export interface CartButtonProps {
-    cart: ItemInCart[];
-}
-
-const CartButton: FC<CartButtonProps> = () => {
+const CartButton: FC = () => {
 
     const {cart} = useSelector(({cart}: State ) => ({
         cart: cart.cart,
